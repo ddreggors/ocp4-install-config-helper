@@ -1,10 +1,10 @@
 # OCP4 Install config helper
 
-The idea of the OCP4 install config helper is simple to show how to automate the steps of customizing your install config. This is a POC tool and not a finished product. This helper also requires some gathering of info. You will need to have some things ready for the variables we use in the template.
+The idea of the OCP4 install config helper is simply to show how to automate the steps of customizing your install config. This is a POC tool and not a finished product. This helper also requires some gathering of info. You will need to have some things ready for the variables we use in the template.
 
 - Assumptions<br />
    - You are working with AWS cloud provider<br />
-   - You are familiar with OpenShift install config items<br />
+   - You are familiar with OpenShift install config file format and items<br />
 - Requirements<br />
    - base domain<br />
    - cluser name<br />
