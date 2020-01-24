@@ -28,7 +28,7 @@ The idea of the OCP4 install config helper is simply to show how to automate the
   - Backup your original install-config.yaml<br />
     **`mv -v {,original-}install-config.yaml`**
 
-  - Edit the vars.yml, publick_key.pub, and pull-secret.txt files (all under `install-files/ocp4-install-config-helper/vars`)<br />
+  - Edit the vars.yml, public_key.pub, and pull-secret.txt files (all under `install-files/ocp4-install-config-helper/vars`)<br />
     - You will need to set the appropriate values in the vars.yaml file.<br />
     - You will need to copy the contents of your public key (often `~/.ssh/id_rsa.pub`) into the public_key.pub file<br />
     - Finally you need to paste the contents of the downloaded pull secret into the pull-secret.txt file
