@@ -34,9 +34,9 @@ The idea of the OCP4 install config helper is simply to show how to automate the
     - Finally you need to paste the contents of the downloaded pull secret into the pull-secret.txt file
 
   - To run the playbook as is and use the install-config.yaml<br />
-    - Make sure you are in the `install-files` directory
-    **`sudo ansible-playbook ocp4-install-config-helper/install-helper.yaml`**
+    - Make sure you are in the `install-files` directory<br />
+    **`sudo ansible-playbook ocp4-install-config-helper/install-helper.yaml`**<br />
     - Once this playbook finishes you will have a new `install-config.yaml` file that will have all of your variables set properly in your `install-files` directory.
 
-  - Finally we can use the new install-config as usual
+  - Finally we can use the new install-config as usual<br />
     **`cd .. && openshift-install create cluster --dir=./install-files`**
