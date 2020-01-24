@@ -1,0 +1,10 @@
+---
+
+baseDomain: base-domain # This must be change
+metadata:
+  name: cluster-name # This must be change
+networking:
+  machineCIDR: 10.0.0.0/16 # This must be changed if yours differs
+platform:
+  aws:
+    region: us-east-2 # This must be changed to your region

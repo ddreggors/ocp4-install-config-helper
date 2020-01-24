@@ -1,0 +1,21 @@
+---
+
+- name: Install config creation
+  hosts: 127.0.0.1
+  gather_facts: no
+  connection: local
+  become: yes
+  vars_files:
+    - vars/vars.yaml
+  vars:
+    pull_secret: "{{ lookup('file', 'vars/pull-secret.txt') }}"
+    ssh_key: "{{ lookup('file', 'vars/public-key.pub', rstrip='no') }}"
+  tasks:
+
+  #- debug: var=metadata.name
+  #- debug: var=pull_secret
+  #- debug: var=ssh_key
+
+  - name: Configure install-config
+    template: src=install-config.j2 dest=../install-config.yaml backup=no
+    tags: template-install-config
